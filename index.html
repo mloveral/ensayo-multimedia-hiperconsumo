@@ -13,8 +13,8 @@
       --ink: #0a0804;
       --paper: #f5f0e8;
       --cream: #ede8dc;
-      --red: #c0392b;
-      --red-dim: #7a2218;
+      --purple: #ab218f;
+      --purple-dim: #7a1866;
       --gold: #b8960c;
       --gold-light: #e8c547;
       --gray: #888070;
@@ -35,12 +35,12 @@
     /* ── CUSTOM SCROLLBAR ── */
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: var(--ink); }
-    ::-webkit-scrollbar-thumb { background: var(--red); }
+    ::-webkit-scrollbar-thumb { background: var(--purple); }
 
     /* ── PROGRESS BAR ── */
     #progress-bar {
       position: fixed; top: 0; left: 0; height: 3px;
-      background: linear-gradient(90deg, var(--red), var(--gold));
+      background: linear-gradient(90deg, var(--purple), var(--gold));
       width: 0%; z-index: 1000; transition: width 0.1s linear;
     }
 
@@ -75,7 +75,7 @@
 
     .nav-links a::after {
       content: ''; position: absolute; bottom: -4px; left: 0;
-      width: 0; height: 1px; background: var(--red);
+      width: 0; height: 1px; background: var(--purple);
       transition: width 0.3s;
     }
 
@@ -129,14 +129,14 @@
     .hero-eyebrow {
       font-family: 'Space Mono', monospace;
       font-size: 0.6rem; letter-spacing: 0.4em;
-      color: var(--red); text-transform: uppercase;
+      color: var(--purple); text-transform: uppercase;
       margin-bottom: 2rem;
       display: flex; align-items: center; gap: 1rem;
     }
 
     .hero-eyebrow::before {
       content: ''; display: block;
-      width: 40px; height: 1px; background: var(--red);
+      width: 40px; height: 1px; background: var(--purple);
     }
 
     .hero-title {
@@ -146,7 +146,7 @@
       margin-bottom: 1.5rem;
     }
 
-    .hero-title .accent { color: var(--red); font-style: italic; }
+    .hero-title .accent { color: var(--purple); font-style: italic; }
     .hero-title .version {
       font-family: 'Unbounded', sans-serif;
       font-size: 0.4em; font-weight: 300;
@@ -162,7 +162,7 @@
 
     .hero-question {
       display: inline-block;
-      border: 1px solid var(--red);
+      border: 1px solid var(--purple);
       padding: 1.2rem 2rem;
       font-family: 'Playfair Display', serif;
       font-style: italic;
@@ -175,7 +175,7 @@
     .hero-question::before {
       content: ''; position: absolute;
       left: 0; top: 0; bottom: 0; width: 0;
-      background: var(--red); opacity: 0.1;
+      background: var(--purple); opacity: 0.1;
       transition: width 1s ease;
     }
 
@@ -246,12 +246,12 @@
       transform: translate(-50%, -50%);
       width: 60px; height: 60px;
       background: var(--ink);
-      border: 2px solid var(--red);
+      border: 2px solid var(--purple);
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-family: 'Playfair Display', serif;
       font-style: italic; font-weight: 700;
-      font-size: 1.1rem; color: var(--red);
+      font-size: 1.1rem; color: var(--purple);
       z-index: 10;
     }
 
@@ -267,7 +267,7 @@
       margin-bottom: 1.5rem;
     }
 
-    .hook-question-block h2 em { color: var(--red); font-style: normal; }
+    .hook-question-block h2 em { color: var(--purple); font-style: normal; }
 
     .hook-question-block p {
       color: var(--gray-light); font-size: 0.8rem;
@@ -296,14 +296,14 @@
 
     .chapter-tag {
       font-size: 0.55rem; letter-spacing: 0.4em;
-      color: var(--red); text-transform: uppercase;
+      color: var(--purple); text-transform: uppercase;
       display: flex; align-items: center; gap: 0.8rem;
       margin-bottom: 1.5rem;
     }
 
     .chapter-tag::before {
       content: ''; display: block;
-      width: 30px; height: 1px; background: var(--red);
+      width: 30px; height: 1px; background: var(--purple);
     }
 
     .chapter-title {
@@ -335,7 +335,7 @@
     }
 
     .pullquote-inner {
-      border-left: 3px solid var(--red);
+      border-left: 3px solid var(--purple);
       padding-left: 3rem;
       max-width: 700px;
     }
@@ -372,7 +372,7 @@
     .stat-card::before {
       content: ''; position: absolute;
       top: 0; left: 0; right: 0; height: 2px;
-      background: var(--red); transform: scaleX(0);
+      background: var(--purple); transform: scaleX(0);
       transform-origin: left; transition: transform 0.4s ease;
     }
 
@@ -387,7 +387,7 @@
       display: flex; align-items: baseline; gap: 0.2rem;
     }
 
-    .stat-number .plus { color: var(--red); font-size: 0.5em; }
+    .stat-number .plus { color: var(--purple); font-size: 0.5em; }
 
     .stat-label {
       font-size: 0.65rem; letter-spacing: 0.15em;
@@ -487,7 +487,7 @@
     }
 
     .video-embed-label::before {
-      content: '▶'; font-size: 0.5rem; color: var(--red);
+      content: '▶'; font-size: 0.5rem; color: var(--purple);
     }
 
     .video-embed iframe {
@@ -516,7 +516,7 @@
 
     .timeline-dot {
       width: 12px; height: 12px;
-      border: 2px solid var(--red);
+      border: 2px solid var(--purple);
       border-radius: 50%;
       margin-top: 0.3rem;
       background: var(--ink);
@@ -527,7 +527,7 @@
     }
 
     .timeline-item:hover .timeline-dot {
-      background: var(--red);
+      background: var(--purple);
       box-shadow: 0 0 20px rgba(192,57,43,0.5);
     }
 
@@ -535,7 +535,7 @@
 
     .timeline-year {
       font-family: 'Unbounded', sans-serif;
-      font-size: 0.7rem; color: var(--red);
+      font-size: 0.7rem; color: var(--purple);
       margin-bottom: 0.5rem; font-weight: 700;
     }
 
@@ -570,7 +570,7 @@
     }
 
     .glitch-text::before {
-      color: var(--red); clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+      color: var(--purple); clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
       animation: glitch-top 3s infinite;
       left: 2px;
     }
@@ -630,7 +630,7 @@
 
     .question-card::before {
       content: ''; position: absolute;
-      inset: 0; background: var(--red);
+      inset: 0; background: var(--purple);
       opacity: 0; transition: opacity 0.3s;
     }
 
@@ -652,7 +652,7 @@
 
     .question-card .expand-btn {
       font-size: 0.55rem; letter-spacing: 0.25em;
-      color: var(--red); text-transform: uppercase;
+      color: var(--purple); text-transform: uppercase;
       display: flex; align-items: center; gap: 0.5rem;
       background: none; border: none; cursor: pointer;
       font-family: 'Space Mono', monospace;
@@ -660,7 +660,7 @@
     }
 
     .question-card .expand-btn::before {
-      content: '+'; font-size: 1rem; color: var(--red);
+      content: '+'; font-size: 1rem; color: var(--purple);
     }
 
     .question-answer {
@@ -775,7 +775,7 @@
       position: relative;
     }
 
-    .mega-quote blockquote em { color: var(--red); font-style: normal; }
+    .mega-quote blockquote em { color: var(--purple); font-style: normal; }
 
     .mega-quote cite {
       font-family: 'Space Mono', monospace;
@@ -833,7 +833,7 @@
 
     .open-questions h4 {
       font-size: 0.55rem; letter-spacing: 0.3em;
-      color: var(--red); text-transform: uppercase;
+      color: var(--purple); text-transform: uppercase;
       margin-bottom: 2rem;
     }
 
@@ -851,7 +851,7 @@
 
     .open-questions li::before {
       content: '→'; position: absolute; left: 0;
-      color: var(--red); font-style: normal;
+      color: var(--purple); font-style: normal;
       font-family: 'Space Mono', monospace;
     }
 
@@ -878,7 +878,7 @@
       transition: border-color 0.3s;
     }
 
-    .biblio-item:hover { border-color: var(--red); }
+    .biblio-item:hover { border-color: var(--purple); }
 
     .biblio-item p {
       font-size: 0.7rem; color: var(--gray);
@@ -1009,7 +1009,7 @@
     }
 
     /* Highlight spans */
-    .hl-red { color: var(--red); }
+    .hl-red { color: var(--purple); }
     .hl-gold { color: var(--gold-light); }
     .hl-white { color: var(--white); font-weight: 700; }
   </style>
@@ -1059,13 +1059,12 @@
     <div class="video-comparison">
       <div class="video-panel">
         <div class="video-panel-label">
-          <span class="era">Años 80 · Publicidad Tradicional</span>
-          <span class="title-label">El anuncio que sabes que es un anuncio</span>
+          <span class="era">1985 · Anuncio Televisivo Tradicional</span>
+          <span class="title-label">Coca-Cola New Coke — el anuncio que sabes que es un anuncio</span>
         </div>
-        <!-- Truman Show cocoa scene as proxy for traditional ad -->
         <iframe
-          src="https://www.youtube.com/embed/MzKSQrhX7BM"
-          title="The Truman Show - Cocoa Scene"
+          src="https://www.youtube.com/embed/vouCPDHbjTI"
+          title="Coca-Cola New Coke Ad - Stranger Things"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
@@ -1075,12 +1074,12 @@
 
       <div class="video-panel">
         <div class="video-panel-label">
-          <span class="era">2012 · Product Placement Moderno</span>
-          <span class="title-label">El anuncio disfrazado de entretenimiento</span>
+          <span class="era">2019 · Product Placement en Streaming</span>
+          <span class="title-label">Stranger Things S3 · Lucas y la New Coke — el anuncio dentro de la serie</span>
         </div>
         <iframe
-          src="https://www.youtube.com/embed/VHz30rlNHCc"
-          title="Heineken Skyfall James Bond"
+          src="https://www.youtube.com/embed/rMJOVWy7cGw"
+          title="Stranger Things Season 3 - Pool Party New Coke"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
@@ -1088,9 +1087,9 @@
     </div>
 
     <div class="hook-question-block reveal">
-      <h2>La publicidad más poderosa ya no se parece a un <em>anuncio</em>.</h2>
+      <h2>El mismo producto. <em>Dos formas de vendértelo.</em> ¿Cuál te influyó más?</h2>
       <p>
-        La publicidad tradicional interrumpía nuestro entretenimiento. La contemporánea, potenciada por Inteligencia Artificial, se ha entrelazado tan profundamente con él que ya no la percibimos como tal. Este ensayo analiza cómo esa invisibilidad se convierte en la herramienta de persuasión más eficaz de la historia.
+        A la izquierda: el anuncio de Coca-Cola New Coke de 1985, dirigido por los Duffer Brothers para Stranger Things. Es un anuncio — lo sabes, lo ves, activas tus filtros. A la derecha: la escena de Lucas en la serie bebiendo New Coke, diciéndote que es mejor. No es un anuncio. Es entretenimiento. Y funciona más.
       </p>
     </div>
   </section>
@@ -1157,6 +1156,35 @@
           <div class="timeline-year">1980–2010</div>
           <h4>El product placement estático</h4>
           <p>Ray-Ban en <em>Top Gun</em> (1986). Pepsi y Nike en <em>Volver al futuro II</em> (1989). La marca se integra en la narrativa, pero de forma igual para todos los espectadores del mundo.</p>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.5rem;">
+            <figure style="margin:0;">
+              <img
+                src="https://vintagedesignerframes.com/cdn/shop/files/Tom_Cruise_Sunglasses_Top_Gun_Maverick_Ray_Ban_Aviator.png?v=1739356365&width=1445"
+                alt="Aviator sunglasses de Ray-Ban"
+                style="width:100%; border:1px solid rgba(255,255,255,0.08); filter:grayscale(20%) contrast(1.05); display:block;"
+                onerror="this.parentElement.style.display='none'"
+              />
+              <figcaption style="font-size:0.5rem; color:var(--gray); letter-spacing:0.1em; margin-top:0.5rem; text-transform:uppercase;">Pepsi · Volver al futuro II (1989)</figcaption>
+            </figure>
+            <figure style="margin:0;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI9cOhmkvCVP9ao8n_JgQohreIaKP4nO1VFQ&s"
+                alt="Pepsi product placement en Volver al Futuro II"
+                style="width:100%; border:1px solid rgba(255,255,255,0.08); filter:grayscale(20%) contrast(1.05); display:block;"
+                onerror="this.parentElement.style.display='none'"
+              />
+              <figcaption style="font-size:0.5rem; color:var(--gray); letter-spacing:0.1em; margin-top:0.5rem; text-transform:uppercase;">Pepsi · Volver al futuro II (1989)</figcaption>
+            </figure>
+            <figure style="margin:0;">
+              <img
+                src="https://i.insider.com/56ea330cdd08955e538b486d?width=800&format=jpeg&auto=webp"
+                alt="Nike product placement en Volver al Futuro II"
+                style="width:100%; border:1px solid rgba(255,255,255,0.08); filter:grayscale(20%) contrast(1.05); display:block;"
+                onerror="this.parentElement.style.display='none'"
+              />
+              <figcaption style="font-size:0.5rem; color:var(--gray); letter-spacing:0.1em; margin-top:0.5rem; text-transform:uppercase;">Nike · Volver al futuro II (1989)</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
 
@@ -1191,20 +1219,30 @@
     <!-- Truman Show parodia section -->
     <div class="text-block reveal">
       <p>
-        La historia tiene su propia ironía. En 1998, <em>The Truman Show</em> parodiaba exactamente esto: dentro de la narrativa del reality show, los personajes hacían publicidad de productos de forma deliberada y explícita. Era sátira. Hoy, lo que entonces era ciencia ficción satírica es <strong>tecnología operativa y cotidiana</strong>.
+        La historia tiene su propia ironía. En 1998, <em>The Truman Show</em> parodiaba exactamente esto: dentro de la narrativa del reality show, los personajes hacían publicidad de productos de forma deliberada y explícita — mirando a cámara, nombrando la marca, elogiando el producto. Era sátira. Una advertencia disfrazada de comedia. Hoy, lo que entonces era ciencia ficción satírica es <strong>tecnología operativa y cotidiana</strong>.
       </p>
       <p>
         Y <em>Pulp Fiction</em> fue más allá: utilizó product placement de marcas completamente ficticias — Red Apple Cigarettes, Big Kahuna Burger — para demostrar que la lógica del producto integrado en la narrativa funciona incluso cuando el producto no existe.
       </p>
     </div>
 
+    <div class="video-embed reveal">
+      <div class="video-embed-label">The Truman Show (1998) · Cocoa Scene — la parodia que predijo el futuro</div>
+      <iframe
+        src="https://www.youtube.com/embed/MzKSQrhX7BM"
+        title="The Truman Show Cocoa Scene"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
     <figure class="inline-image reveal">
       <img
-        src="https://isenbergmarketing.wordpress.com/wp-content/uploads/2014/09/tarantino-brands.jpg"
+        src="https://i.etsystatic.com/20823586/r/il/681b5d/2983549297/il_1080xN.2983549297_kdhk.jpg"
         alt="Marcas ficticias de Quentin Tarantino en Pulp Fiction"
         onerror="this.style.display='none'"
       />
-      <figcaption>Pulp Fiction (1994) · Marcas ficticias como Red Apple Cigarettes y Big Kahuna Burger — product placement de lo que no existe (Lucasmatthew, 2014)</figcaption>
+      <figcaption>Pulp Fiction (1994) · Marcas ficticias como Red Apple Cigarettes — product placement de lo que no existe (Lucasmatthew, 2014)</figcaption>
     </figure>
   </section>
 
@@ -1356,7 +1394,7 @@
 
     <div class="stats-grid reveal">
       <div class="stat-card">
-        <div class="stat-number" style="font-size: 1.8rem; color: var(--paper);">Publicidad <span style="color:var(--red)">tradicional</span></div>
+        <div class="stat-number" style="font-size: 1.8rem; color: var(--paper);">Publicidad <span style="color:var(--purple)">tradicional</span></div>
         <div class="stat-label">El consumidor la identifica. Activa filtros críticos. Puede rechazarla conscientemente.</div>
       </div>
       <div class="stat-card">
@@ -1381,11 +1419,17 @@
       <div class="exp-visual">
         <div class="exp-badge">Blue Label · Experiencia Inmersiva</div>
         <h3>Johnnie Walker Halo</h3>
+        <img
+          src="https://files.merca20.com/uploads/2025/08/RLUTJ51-1024x682.jpg"
+          alt="Johnnie Walker Blue Label experiencia Halo personalización IA"
+          style="width:100%; margin: 1rem 0; border:1px solid rgba(232,197,71,0.2); filter:brightness(0.85) contrast(1.1); display:block;"
+          onerror="this.style.display='none'"
+        />
         <p>
           Una IA analiza las preferencias del cliente en tienda y genera un patrón visual único impreso al instante en la etiqueta. El cliente se lleva su botella "única" el mismo día.
         </p>
         <div class="exp-stat">
-          <div class="exp-stat-num">130<span style="font-size:0.5em; color:var(--red)">%</span></div>
+          <div class="exp-stat-num">130<span style="font-size:0.5em; color:var(--purple)">%</span></div>
           <div class="exp-stat-label">Incremento<br>de ventas<br>interanual</div>
         </div>
       </div>
